@@ -18,7 +18,7 @@ public class ObtenerRest {
 	@GetMapping("/saludo_aux")
 	String saludo_aux() {
         RestTemplate plantilla = new RestTemplate();
-        String resultado = plantilla.getForObject("http://saludo-juan-benavides-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/", String.class);
+        String resultado = plantilla.getForObject("http://saludo-juan-maldonado02-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/api/", String.class);
         return "Obtiene el saludo desde otro servicio "+resultado;
 	}
 	
